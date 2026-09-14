@@ -1,4 +1,4 @@
-name: PR代码校验
+name: PR代码校验，
 run-name: PR校验 ${{ github.head_ref }}
 on:
   pull_request:

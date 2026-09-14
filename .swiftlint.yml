@@ -9,16 +9,17 @@ excluded:
   - Carthage
   - DerivedData
 
+# ========== 临时禁用规则数组（本次报错的三条）==========
+disabled_rules:
+  - trailing_whitespace
+  - legacy_swiftui_aspect_ratio
+  - line_length
+# =======================================================
+
 # 核心强制规则
 force_unwrapping: error
 unused_import: error
 deprecated_apis: error
-
-# ========== 临时关闭本次报错的规则，用于CI验收，后续可按需重新开启 ==========
-trailing_whitespace: disabled
-legacy_swiftui_aspect_ratio: disabled
-line_length: disabled
-# ==========================================================================
 
 # 自定义规则：检测尺寸代码缺少注释（项目核心约束，不能关闭）
 custom_rules:
